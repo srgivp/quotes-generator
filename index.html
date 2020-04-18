@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Sergii Popravka" />
+    <title>FCC Random Quote Machine</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="cleanText(), newQuote()">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div id="main">
+      <div id="quote-box">
+        <div id="text"></div>
+        <div id="author"></div>
+        <div id="buttons">
+          <button
+            type="button"
+            class="btn btn-light"
+            style="border: none"
+            id="new-quote"
+            onclick="cleanText(), newQuote()"
+          >
+            more
+          </button>
+          <button
+            id="button-tweet"
+            class="btn btn-light"
+            type="button"
+            style="border: none"
+          >
+            <a
+              id="tweet-quote"
+              class="twitter-share-button"
+              title="Wanna tweet it?"
+              target="_blank"
+            >
+              <i class="fa fa-twitter"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <p id="attribution">
+      &#169; Designed and coded by Sergii Popravka <br />
+      &#169; Quotes are from Bestquotes API
+      https://qvoca-bestquotes-v1.p.rapidapi.com/quote
+    </p>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "190903fccrandomquoterproject",
+  "version": "1.0.0",
+  "description": "test project for freecodecamp",
+  "main": "fcc-random-quoter.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.22.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergii Popravka",
+  "license": "ISC"
+}
